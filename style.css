@@ -1,0 +1,467 @@
+@charset "UTF-8";
+
+html {
+    font-size: 100%;
+}
+
+
+body {
+    background-image: url(../images/bacground-img.jpg);
+}
+
+/*NEWSの文字編集
+--------------------*/
+.header-title {
+    margin-top: -20px;
+    margin-right: 1400px;
+    margin-left: 20px;
+    font-size: 25px;
+    color: #1fc9cf;
+    text-shadow:
+    0 1px #bbb,
+    0 2px #aaa,
+    0 3px #999,
+    0 4px #888,
+    0 5px #777,
+    0 6px #666,
+    0 7px #555,
+    0 8px #444,
+    0 9px #333,
+    0 10px 8px #000;
+}
+
+.title {
+    text-decoration: none;
+    color: #1fc9cf;
+}
+
+a {
+    text-decoration: none;
+}
+
+
+/*メインナビの下線をクリックで維持
+----------------------------------*/
+#top-underline {
+    border-bottom:4px solid #40a6f0;
+}
+
+#economy-underline {
+    border-bottom:4px solid #40a6f0;
+}
+
+#sports-underline {
+    border-bottom:4px solid #40a6f0;
+}
+
+#world-underline {
+    border-bottom:4px solid #40a6f0;
+}
+
+#contact-underline {
+    border-bottom:4px solid #40a6f0;
+}
+
+/*contactフォーム
+---------------------*/
+form {
+    margin-top: 30px;
+}
+
+table {
+    margin:0 auto;
+}
+
+.form-width{
+    resize: none;
+    width:400px;
+    height: 30px;
+}
+
+textarea {
+    resize: none;
+    width:400px;
+    height:150px;
+}
+
+.middle {
+    text-align: center;
+    margin-bottom: 16px;
+}
+
+.submit-reset-bottom {
+    width: 50px;
+    height: 30px;
+    cursor: pointer;
+}
+
+/*フッターデザイン
+----------------------*/
+footer {
+    text-align: center;
+}
+
+.footer-contact:hover{
+    text-decoration: underline;
+}
+
+
+
+/*横幅600px以上の場合
+-------------------------*/
+@media (min-width: 850px) {
+
+    header {
+        margin-bottom: 50px;
+    }
+
+    /*メインナビ
+    ----------------------*/
+    .main-nav {
+        display: flex;
+        font-size: 1.7rem;
+        text-transform: uppercase;
+        padding-inline-start: 0px;
+        list-style-type: none;
+        justify-content: space-around;
+    }
+
+    .main-nav li {
+        margin: 0 5px;
+        position: relative;
+        list-style: none;
+    }
+
+    .main-nav a {
+    color: black;
+    }
+
+    .main-nav a:hover {
+        color: rgb(11, 174, 202);
+        border-bottom:4px solid #40a6f0;
+    }
+
+    .submenu {
+        position: absolute;
+        display: none;
+        margin-left: -45px;
+    }
+
+    .submenu li a {
+        font-size: 20px;
+    }
+
+    /* ハンバーガーメニュー削除
+    ---------------------------- */
+    .hamburger-menu {
+        display: none;
+    }
+
+    /*ページメニューアンダーライン
+    ---------------------------*/
+    .page-menu {
+        text-decoration: underline;
+        text-decoration-color: #40a6f0;
+        font-size: 40px;
+        margin-left: 110px;
+        margin-bottom: 20px;
+    }
+
+    .top-content a:hover{
+        text-decoration: underline;
+        text-decoration-color: #0eb3ff;
+    }
+    .eco-article a:hover{
+        text-decoration: underline;
+        text-decoration-color: #0eb3ff;
+    }
+    .spo-article a:hover{
+        text-decoration: underline;
+        text-decoration-color: #0eb3ff;
+    }
+    .wor-article a:hover{
+        text-decoration: underline;
+        text-decoration-color: #0eb3ff;
+
+    }
+
+    /*Top Pageメイン
+    -------------------*/
+    .top-title-content {
+        display: flex;
+        margin: 0 110px;
+    }
+
+    .top-wor-content {
+        margin: 0 110px;
+    }
+
+    .top-article1 {
+        border: 1px solid gray;
+        background-color: white;
+        margin-right: 20px;
+        width: 100%;
+        opacity: 0.88;
+    }
+
+    .top-article2 {
+        border: 1px solid gray;
+        background-color: white;
+        width: 100%;
+        opacity: 0.88;
+    }
+
+    .top-article3 {
+        border: 1px solid gray;
+        background-color: white;
+        margin-top: 20px;
+        margin-bottom: 16px;
+        opacity: 0.88;
+    }
+
+    .title-page {
+        color: black;
+        font-size: 25px;
+        font-weight: bold;
+        text-decoration: underline;
+        text-decoration-color: #40a6f0;
+        pointer-events: none;
+    }
+
+    .top-content {
+        font-size: 20px;
+        text-align: left;
+        margin-right: 20px;
+    }
+
+    .top-content a:hover{
+        text-decoration: underline;
+        text-decoration-color: #0eb3ff;
+    }
+
+    article {
+        text-align: center;
+    }
+
+    /*economy sports world メイン
+    --------------------*/
+    .eco-article {
+        text-align: left;
+        font-size: 20px;
+        border: 1px solid gray;
+        background-color: white;
+        margin: 0 110px;
+        padding: 20px;
+        opacity: 0.88;
+    }
+
+
+    .spo-article {
+        text-align: left;
+        font-size: 20px;
+        border: 1px solid gray;
+        background-color: white;
+        margin: 0 110px;
+        padding: 20px;
+        opacity: 0.88;
+    }
+
+    .wor-article {
+        text-align: left;
+        font-size: 20px;
+        border: 1px solid gray;
+        background-color: white;
+        margin: 0 110px;
+        padding: 20px;
+        opacity: 0.88;
+    }
+
+    /* 黒丸消去
+    ---------------------- */
+    .text-decoration-none {
+        list-style-type:none;
+    }
+
+}
+
+
+
+/*横幅599px以下の場合
+-------------------------*/
+@media (max-width: 849px) {
+    /*NEWSの文字サイズ
+    ------------------*/
+    .header-title {
+        font-size: 20px;
+        margin-left: 0;
+    }
+
+    /*メインナビ削除
+    --------------------*/
+    .main-nav {
+        display: none;
+    }
+
+    .page-menu {
+        text-decoration: underline;
+        text-decoration-color: #40a6f0;
+        font-size: 40px;
+        text-align: center;
+        margin-bottom: 20px;
+    }
+
+
+    /*ハンバーガーメニュー
+    ------------------------*/
+    .menu-btn {
+        border-radius: 80px 100% / 100% 80px;
+        position: fixed;
+        top: 15px;
+        right: 15px;
+        display: flex;
+        height: 60px;
+        width: 60px;
+        justify-content: center;
+        align-items: center;
+        z-index: 90;
+        background-color: #075288;
+        cursor: pointer;
+    }
+
+    /*ハンバーガーメニューの形の動き*/
+    .menu-btn:hover {
+        color: #fff;
+    border-radius: 100% 80px / 80px 100%;
+    }
+
+    .menu-btn span,
+    .menu-btn span:before,
+    .menu-btn span:after {
+        content: '';
+        display: block;
+        height: 3px;
+        width: 25px;
+        border-radius: 3px;
+        background-color: #ffffff;
+        position: absolute;
+    }
+    .menu-btn span:before {
+        bottom: 8px;
+    }
+    .menu-btn span:after {
+        top: 8px;
+    }
+
+    /*左のチェックボックスを消す
+    -----------------------------------*/
+    #menu-btn-check {
+        display: none;
+    }
+
+    /*メニューオープン時は真ん中の線を透明にする
+    -------------------------------------------*/
+    #menu-btn-check:checked ~ .menu-btn span {
+        background-color: rgba(255, 255, 255, 0);
+    }
+    #menu-btn-check:checked ~ .menu-btn span::before {
+        bottom: 0;
+        transform: rotate(45deg);
+    }
+    #menu-btn-check:checked ~ .menu-btn span::after {
+        top: 0;
+        transform: rotate(-45deg);
+    }
+
+    /*メニューの装飾CSS
+    ---------------------------*/
+    .menu-content {
+        width: 115px;
+        height: 300px;
+        position: fixed;
+        top: 0;
+        right: 0;
+        z-index: 80;
+        background-color: #3584bb;
+        opacity: 0.8;
+    }
+    .menu-content ul {
+        padding: 70px 10px 0;
+    }
+    .menu-content ul li {
+        border-bottom: solid 1px #ffffff;
+        list-style: none;
+    }
+    .menu-content ul li a {
+        display: block;
+        width: 100%;
+        font-size: 15px;
+        box-sizing: border-box;
+        color:#ffffff;
+        text-decoration: none;
+        padding: 9px 15px 10px 0;
+        position: relative;
+    }
+    .menu-content ul li a::before {
+        content: "";
+        width: 7px;
+        height: 7px;
+        border-top: solid 2px #ffffff;
+        border-right: solid 2px #ffffff;
+        transform: rotate(45deg);
+        position: absolute;
+        right: 11px;
+        top: 16px;
+    }
+
+    .menu-content a:hover {
+        color: black;
+    }
+
+    /*ボタンを押すことでメニューバーが引っ込む
+    ---------------------------------------*/
+    .menu-content {
+        width: 115px;
+        height: 300px;
+        position: fixed;
+        top: 0;
+        right: -115px;/*leftの値を変更してメニューを画面外へ*/
+        z-index: 80;
+        background-color: #3584bb;
+        transition: all 0.5s;/*アニメーション設定*/
+    }
+    /*ボタンを押すことでメニュー画面の表示
+    -----------------------------------*/
+    #menu-btn-check:checked ~ .menu-content {
+        right: 0;/*メニューを画面内へ*/
+    }
+
+    /*ページタイトル  位置
+    ---------------------*/
+    .title-page {
+        color: black;
+        font-size: 25px;
+        font-weight: bold;
+        text-decoration: underline;
+        text-decoration-color: #40a6f0;
+        margin-top: 10px;
+    }
+
+    .top-padding {
+        padding:3px;
+    }
+
+    .background-white {
+        background-color: white;
+        border: 1px solid gray;
+        margin-bottom: 16px;
+        opacity: 0.88;
+    }
+
+    /* ホバーで記事をアンダーライン */
+    .background-white a:hover{
+        text-decoration: underline;
+        text-decoration-color: #0eb3ff;
+    }
+
+
+}
