@@ -40,25 +40,25 @@ a {
 }
 
 
-/*メインナビの下線をクリックで維持
+/*ナビゲーションメニューの下線をクリックで維持
 ----------------------------------*/
-#top-underline {
+#TOP-category {
     border-bottom:4px solid #40a6f0;
 }
 
-#economy-underline {
+#ECONOMY-category {
     border-bottom:4px solid #40a6f0;
 }
 
-#sports-underline {
+#SPORTS-category {
     border-bottom:4px solid #40a6f0;
 }
 
-#world-underline {
+#WORLD-category {
     border-bottom:4px solid #40a6f0;
 }
 
-#contact-underline {
+#CONTACT-category {
     border-bottom:4px solid #40a6f0;
 }
 
@@ -108,7 +108,7 @@ footer {
 
 
 
-/*横幅600px以上の場合
+/*横幅850px以上の場合
 -------------------------*/
 @media (min-width: 850px) {
 
@@ -116,20 +116,17 @@ footer {
         margin-bottom: 50px;
     }
 
-    /*メインナビ
+    /*ナビゲーションメニュー
     ----------------------*/
     .main-nav {
         display: flex;
         font-size: 1.7rem;
-        text-transform: uppercase;
         padding-inline-start: 0px;
-        list-style-type: none;
         justify-content: space-around;
     }
 
     .main-nav li {
-        margin: 0 5px;
-        position: relative;
+        display: block;
         list-style: none;
     }
 
@@ -142,13 +139,13 @@ footer {
         border-bottom:4px solid #40a6f0;
     }
 
-    .submenu {
-        position: absolute;
+    .slide-nav {
         display: none;
+        position: absolute;
         margin-left: -45px;
     }
 
-    .submenu li a {
+    .slide-nav li a {
         font-size: 20px;
     }
 
@@ -287,9 +284,9 @@ footer {
 
 
 
-/*横幅599px以下の場合
+/*横幅850px以下の場合
 -------------------------*/
-@media (max-width: 849px) {
+@media (max-width: 850px) {
     /*NEWSの文字サイズ
     ------------------*/
     .header-title {
