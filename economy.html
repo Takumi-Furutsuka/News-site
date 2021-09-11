@@ -3,14 +3,13 @@
 
 <head>
     <!-- Global site tag (gtag.js) - Google Analytics -->
-　　<script async src="https://www.googletagmanager.com/gtag/js?id=G-BGF0SG20GN"></script>
-　　<script>
-  　window.dataLayer = window.dataLayer || [];
-  　function gtag(){dataLayer.push(arguments);}
-  　gtag('js', new Date());
-
-  　gtag('config', 'G-BGF0SG20GN');
-　　</script>
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-BGF0SG20GN"></script>
+    <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-BGF0SG20GN');
+    </script>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -18,8 +17,6 @@
     <title>NEWS</title>
     <link rel="stylesheet" href="style.css">
 </head>
-
-<!-- <h1>Econmy Page</h1> -->
 
 <body>
     <header>
@@ -35,34 +32,33 @@
                     <a href="index.html">TOP</a>
                 </li>
                 <li>
-                    <a id="economy-underline" href="economy.html">Economy</a>
-                    <ul class="submenu">
-                        <li><a href="technology.html">Technology</a></li>
+                    <a id="ECONOMY-category" href="economy.html">ECONOMY</a>
+                    <ul class="slide-nav">
+                        <li><a href="technology.html">TECHNOLOGY</a></li>
                     </ul>
                 </li>
                 <li>
-                    <a href="sports.html">Sports</a>
-                    <ul class="submenu">
-                        <li><a href="baseball.html">Baseball</a></li>
-                        <li><a href="golf.html">Golf</a></li>
-                        <li><a href="boxing.html">Boxing</a></li>
+                    <a href="sports.html">SPORTS</a>
+                    <ul class="slide-nav">
+                        <li><a href="baseball.html">BASEBALL</a></li>
+                        <li><a href="golf.html">GOLF</a></li>
+                        <li><a href="boxing.html">BOXING</a></li>
                     </ul>
                 </li>
                 <li>
-                    <a href="world.html">World</a>
-                    <ul class="submenu">
+                    <a href="world.html">WORLD</a>
+                    <ul class="slide-nav">
                         <li><a href="us.html">U.S.</a></li>
-                        <li><a href="europe.html">Europe</a></li>
-                        <li><a href="asia.html">Asia</a></li>
+                        <li><a href="europe.html">EUROPE</a></li>
+                        <li><a href="asia.html">ASIA</a></li>
                     </ul>
                 </li>
                 <li>
-                    <a href="contact.html">Contact</a>
+                    <a href="contact.html">CONTACT</a>
                 </li>
             </ul>
         </nav>
-
-        <!--ここからハンバーガーメニュー-->
+        <!--ハンバーガーメニュー-->
         <div class="hamburger-menu">
             <input type="checkbox" id="menu-btn-check">
             <label for="menu-btn-check" class="menu-btn"><span></span></label>
@@ -85,7 +81,6 @@
                     </li>
                 </ul>
             </div>
-            <!--ここまでハンバーガーメニュー-->
         </div>
     </header>
     <main>
@@ -188,10 +183,10 @@
         $(function () {
             $("ul.main-nav li").hover(
                 function () {
-                    $(".submenu:not(:animated)", this).slideDown();
+                    $(".slide-nav:not(:animated)", this).slideDown();
                 },
                 function () {
-                    $(".submenu", this).slideUp('fast');
+                    $(".slide-nav", this).slideUp('fast');
                 }
             );
         });
