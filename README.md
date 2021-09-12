@@ -9,5 +9,5 @@
   <li>HTML5</li>
   <li>CSS3</li>
   <li>JavaScript</li>
-  <li>jQuery</li>
+  <li>jQuery3.6.0</li>
 </ul>
