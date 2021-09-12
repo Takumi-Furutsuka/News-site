@@ -9,14 +9,13 @@ body {
     background-image: url(bacground-img.jpg);
 }
 
-/*NEWSの文字編集
+/*ヘッダータイトルのNEWSのフォント
 --------------------*/
 .header-title {
     margin-top: -20px;
     margin-right: 1400px;
     margin-left: 20px;
     font-size: 25px;
-    color: #1fc9cf;
     text-shadow:
     0 1px #bbb,
     0 2px #aaa,
@@ -42,23 +41,23 @@ a {
 
 /*ナビゲーションメニューの下線をクリックで維持
 ----------------------------------*/
-#TOP-category {
+#TOP-category-nav {
     border-bottom:4px solid #40a6f0;
 }
 
-#ECONOMY-category {
+#ECONOMY-category-nav {
     border-bottom:4px solid #40a6f0;
 }
 
-#SPORTS-category {
+#SPORTS-category-nav {
     border-bottom:4px solid #40a6f0;
 }
 
-#WORLD-category {
+#WORLD-category-nav {
     border-bottom:4px solid #40a6f0;
 }
 
-#CONTACT-category {
+#CONTACT-category-nav {
     border-bottom:4px solid #40a6f0;
 }
 
@@ -105,7 +104,6 @@ footer {
 .footer-contact:hover{
     text-decoration: underline;
 }
-
 
 
 /*横幅850px以上の場合
@@ -157,7 +155,7 @@ footer {
 
     /*ページメニューアンダーライン
     ---------------------------*/
-    .page-menu {
+    .main-page {
         text-decoration: underline;
         text-decoration-color: #40a6f0;
         font-size: 40px;
@@ -185,7 +183,7 @@ footer {
 
     /*Top Pageメイン
     -------------------*/
-    .top-title-content {
+    .top-page-content {
         display: flex;
         margin: 0 110px;
     }
@@ -230,6 +228,7 @@ footer {
         font-size: 20px;
         text-align: left;
         margin-right: 20px;
+        padding: 3px;
     }
 
     .top-content a:hover{
@@ -276,13 +275,11 @@ footer {
 
     /* 黒丸消去
     ---------------------- */
-    .text-decoration-none {
+    .list-style-type-none {
         list-style-type:none;
     }
 
 }
-
-
 
 /*横幅850px以下の場合
 -------------------------*/
@@ -300,7 +297,7 @@ footer {
         display: none;
     }
 
-    .page-menu {
+    .main-page {
         text-decoration: underline;
         text-decoration-color: #40a6f0;
         font-size: 40px;
@@ -308,10 +305,9 @@ footer {
         margin-bottom: 20px;
     }
 
-
-    /*ハンバーガーメニュー
+    /*ハンバーガーメニューボタン
     ------------------------*/
-    .menu-btn {
+    .hamburger-menu-btn {
         border-radius: 80px 100% / 100% 80px;
         position: fixed;
         top: 15px;
@@ -327,14 +323,14 @@ footer {
     }
 
     /*ハンバーガーメニューの形の動き*/
-    .menu-btn:hover {
+    .hamburger-menu-btn:hover {
         color: #fff;
     border-radius: 100% 80px / 80px 100%;
     }
 
-    .menu-btn span,
-    .menu-btn span:before,
-    .menu-btn span:after {
+    .hamburger-menu-btn span,
+    .hamburger-menu-btn span:before,
+    .hamburger-menu-btn span:after {
         content: '';
         display: block;
         height: 3px;
@@ -343,38 +339,38 @@ footer {
         background-color: #ffffff;
         position: absolute;
     }
-    .menu-btn span:before {
+    .hamburger-menu-btn span:before {
         bottom: 8px;
     }
-    .menu-btn span:after {
+    .hamburger-menu-btn span:after {
         top: 8px;
     }
 
     /*左のチェックボックスを消す
     -----------------------------------*/
-    #menu-btn-check {
+    #hamburger-menu-btn-check {
         display: none;
     }
 
     /*メニューオープン時は真ん中の線を透明にする
     -------------------------------------------*/
-    #menu-btn-check:checked ~ .menu-btn span {
+    #hamburger-menu-btn-check:checked ~ .menu-btn span {
         background-color: rgba(255, 255, 255, 0);
     }
-    #menu-btn-check:checked ~ .menu-btn span::before {
+    #hamburger-menu-btn-check:checked ~ .menu-btn span::before {
         bottom: 0;
         transform: rotate(45deg);
     }
-    #menu-btn-check:checked ~ .menu-btn span::after {
+    #hamburger-menu-btn-check:checked ~ .menu-btn span::after {
         top: 0;
         transform: rotate(-45deg);
     }
 
     /*メニューの装飾CSS
     ---------------------------*/
-    .menu-content {
+    .hamburger-menu-content {
         width: 115px;
-        height: 300px;
+        height: 310px;
         position: fixed;
         top: 0;
         right: 0;
@@ -382,14 +378,14 @@ footer {
         background-color: #3584bb;
         opacity: 0.8;
     }
-    .menu-content ul {
+    .hamburger-menu-content ul {
         padding: 70px 10px 0;
     }
-    .menu-content ul li {
+    .hamburger-menu-content ul li {
         border-bottom: solid 1px #ffffff;
         list-style: none;
     }
-    .menu-content ul li a {
+    .hamburger-menu-content li a {
         display: block;
         width: 100%;
         font-size: 15px;
@@ -399,7 +395,7 @@ footer {
         padding: 9px 15px 10px 0;
         position: relative;
     }
-    .menu-content ul li a::before {
+    .hamburger-menu-content ul li a::before {
         content: "";
         width: 7px;
         height: 7px;
@@ -411,15 +407,15 @@ footer {
         top: 16px;
     }
 
-    .menu-content a:hover {
+    .hamburger-menu-content a:hover {
         color: black;
     }
 
     /*ボタンを押すことでメニューバーが引っ込む
     ---------------------------------------*/
-    .menu-content {
+    .hamburger-menu-content {
         width: 115px;
-        height: 300px;
+        height: 310px;
         position: fixed;
         top: 0;
         right: -115px;/*leftの値を変更してメニューを画面外へ*/
@@ -429,7 +425,7 @@ footer {
     }
     /*ボタンを押すことでメニュー画面の表示
     -----------------------------------*/
-    #menu-btn-check:checked ~ .menu-content {
+    #hamburger-menu-btn-check:checked ~ .hamburger-menu-content {
         right: 0;/*メニューを画面内へ*/
     }
 
@@ -444,11 +440,11 @@ footer {
         margin-top: 10px;
     }
 
-    .top-padding {
+    .article-sentence {
         padding:3px;
     }
 
-    .background-white {
+    .article-background {
         background-color: white;
         border: 1px solid gray;
         margin-bottom: 16px;
@@ -456,10 +452,8 @@ footer {
     }
 
     /* ホバーで記事をアンダーライン */
-    .background-white a:hover{
+    .article-background a:hover{
         text-decoration: underline;
         text-decoration-color: #0eb3ff;
     }
-
-
 }
